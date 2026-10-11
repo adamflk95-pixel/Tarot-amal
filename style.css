@@ -22,3 +22,68 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var
 .tiktok-button:hover {
   transform: scale(1.05);
 }
+
+/* WhatsApp and TikTok buttons — Tarot Amal */
+.tiktok-button,
+.contact-form button[type="submit"] {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 50px;
+  padding: 13px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 14px;
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* WhatsApp */
+.contact-form button[type="submit"] {
+  background: linear-gradient(135deg, #25D366, #128C4A);
+  color: #fff;
+  border: 1px solid #25D366;
+  box-shadow: 0 5px 16px #128C4A30;
+}
+
+/* TikTok */
+.tiktok-button {
+  background: #080808;
+  color: #fff;
+  border: 1px solid #25F4EE;
+  box-shadow: 3px 3px 0 #FE2C55;
+}
+
+.tiktok-button:hover,
+.contact-form button[type="submit"]:hover {
+  transform: translateY(-2px);
+}
+
+.tiktok-button:focus-visible,
+.contact-form button[type="submit"]:focus-visible {
+  outline: 3px solid #D9A34F;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .tiktok-button,
+  .contact-form button[type="submit"] {
+    min-height: 48px;
+    padding: 12px 14px;
+    font-size: 13px;
+    border-radius: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tiktok-button,
+  .contact-form button[type="submit"] {
+    transition: none;
+  }
+}
