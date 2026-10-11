@@ -101,7 +101,10 @@ text-decoration: none;
 
 /* إخفاء شعار تيك توك والإبقاء على الكتابة فقط */
 .tiktok-button svg {
-display: none;
+  display: inline-block !important;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
 }
 
 .tiktok-button:hover {
