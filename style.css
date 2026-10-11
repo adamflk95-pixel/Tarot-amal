@@ -111,3 +111,36 @@ text-decoration: none;
 transform: none;
 text-decoration: underline;
 }
+.tiktok-button {
+display: flex !important;
+width: 100% !important;
+box-sizing: border-box;
+align-items: center !important;
+justify-content: center !important;
+gap: 9px;
+padding: 12px 0;
+margin: 0 auto;
+background: transparent !important;
+border: none !important;
+box-shadow: none !important;
+color: inherit;
+text-align: center !important;
+text-decoration: none;
+direction: rtl;
+}
+
+.tiktok-button svg {
+display: block !important;
+visibility: visible !important;
+width: 26px;
+height: 26px;
+flex-shrink: 0;
+}
+
+.tiktok-button span {
+display: inline-block;
+}
+
+.tiktok-button:hover {
+text-decoration: underline;
+}
