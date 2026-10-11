@@ -87,3 +87,24 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var
     transition: none;
   }
 }
+/* رابط تيك توك بدون إطار أو خلفية */
+.tiktok-button {
+background: transparent !important;
+border: none !important;
+box-shadow: none !important;
+color: inherit;
+padding: 8px 0;
+min-height: auto;
+width: auto;
+text-decoration: none;
+}
+
+/* إخفاء شعار تيك توك والإبقاء على الكتابة فقط */
+.tiktok-button svg {
+display: none;
+}
+
+.tiktok-button:hover {
+transform: none;
+text-decoration: underline;
+}
