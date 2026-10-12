@@ -144,3 +144,37 @@ display: inline-block;
 .tiktok-button:hover {
 text-decoration: underline;
 }
+
+/* Images supplied from the previous Tarot Amal website */
+.service-image {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  margin: 12px 0 18px;
+}
+@media (max-width: 600px) {
+  .service-image { height: auto; max-height: 360px; object-fit: contain; }
+}
+
+/* Compact tarot thumbnails that preserve the site's visual balance */
+.service-image {
+  display: block;
+  width: min(100%, 280px);
+  max-height: 300px;
+  height: auto;
+  object-fit: contain;
+  margin: 12px auto 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 600px) {
+  .service-image {
+    width: min(78%, 230px);
+    max-height: 250px;
+    margin: 10px auto 14px;
+  }
+}
