@@ -145,41 +145,25 @@ display: inline-block;
 text-decoration: underline;
 }
 
-/* Images supplied from the previous Tarot Amal website */
+/* Large circular tarot images: prioritize a bold visual; top/bottom cropping is intentional */
 .service-image {
   display: block;
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
-  margin: 12px 0 18px;
-}
-@media (max-width: 600px) {
-  .service-image { height: auto; max-height: 360px; object-fit: contain; }
-}
-
-/* Circular tarot thumbnails: keep the full card artwork visible without cropping */
-.service-image {
-  display: block;
-  width: 220px;
-  height: 220px;
+  width: 280px;
+  height: 280px;
   max-width: 100%;
   box-sizing: border-box;
-  padding: 18px;
+  padding: 0;
   margin: 14px auto 18px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   border-radius: 50%;
-  background: radial-gradient(circle, #fffaf0 0%, #f4e8d1 72%, #e3cfaa 100%);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
 }
 
 @media (max-width: 600px) {
   .service-image {
-    width: 190px;
-    height: 190px;
-    padding: 16px;
+    width: 240px;
+    height: 240px;
     margin: 10px auto 14px;
   }
 }
