@@ -159,22 +159,27 @@ text-decoration: underline;
   .service-image { height: auto; max-height: 360px; object-fit: contain; }
 }
 
-/* Compact tarot thumbnails that preserve the site's visual balance */
+/* Circular tarot thumbnails: keep the full card artwork visible without cropping */
 .service-image {
   display: block;
-  width: min(100%, 280px);
-  max-height: 300px;
-  height: auto;
+  width: 220px;
+  height: 220px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 18px;
+  margin: 14px auto 18px;
   object-fit: contain;
-  margin: 12px auto 16px;
-  border-radius: 8px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  object-position: center;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fffaf0 0%, #f4e8d1 72%, #e3cfaa 100%);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
 }
 
 @media (max-width: 600px) {
   .service-image {
-    width: min(78%, 230px);
-    max-height: 250px;
+    width: 190px;
+    height: 190px;
+    padding: 16px;
     margin: 10px auto 14px;
   }
 }
