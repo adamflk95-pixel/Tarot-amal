@@ -167,3 +167,52 @@ text-decoration: underline;
     margin: 10px auto 14px;
   }
 }
+
+
+/* Pricing section inspired by the original Tarot Amal website */
+.pricing {
+  background: #c87524;
+  color: #fffaf2;
+  text-align: center;
+  padding: 58px 22px 64px;
+}
+.pricing-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.pricing h2 {
+  font: 700 clamp(30px, 4.5vw, 42px)/1.5 "Amiri", serif;
+  margin: 0 0 22px;
+  color: #fffaf2;
+}
+.pricing p {
+  max-width: 850px;
+  margin: 0 auto 34px;
+  font: 400 clamp(18px, 2.5vw, 26px)/1.9 "Cairo", sans-serif;
+  color: #fffaf2;
+}
+.pricing-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  min-height: 72px;
+  padding: 14px 32px;
+  background: #fff;
+  color: #77706c;
+  border: 1px solid #f5eee5;
+  border-radius: 0;
+  font: 600 23px "Cairo", sans-serif;
+  box-shadow: 0 3px 10px rgba(75, 37, 8, .12);
+  transition: transform .2s ease, background .2s ease;
+}
+.pricing-cta:hover {
+  background: #fff5e8;
+  transform: translateY(-2px);
+}
+@media (max-width: 600px) {
+  .pricing { padding: 44px 20px 48px; }
+  .pricing h2 { font-size: 29px; }
+  .pricing p { font-size: 17px; line-height: 1.9; }
+  .pricing-cta { min-width: 190px; min-height: 60px; font-size: 20px; }
+}
