@@ -1,1 +1,7 @@
-Tarot Amal update: added the original-style pricing section and WhatsApp booking button. Replace index.html and style.css in the main branch. Keep your existing script.js and image files unchanged.
+تحديث Tarot Amal: قسم الأسعار وزر حجز الموعد
+
+- زر «حجز موعد» ينقلك إلى نموذج التواصل داخل الموقع ولا يفتح WhatsApp مباشرة.
+- املأ الاسم ونوع القراءة والرسالة، ثم اضغط «إرسال الطلب عبر الواتساب».
+- سيُفتح WhatsApp برسالة مُعبأة من بيانات النموذج لتراجعها وترسلها بنفسك.
+
+ارفع index.html وstyle.css وscript.js إلى فرع main. احتفظ بملفات الصور الحالية في مكانها وأسمائها.
